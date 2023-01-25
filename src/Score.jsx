@@ -1,4 +1,4 @@
-const Score = () => {
+const Score = (props) => {
   return (
     <>
       <h2>These are the student's scores!</h2>  

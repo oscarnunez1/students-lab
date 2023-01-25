@@ -1,13 +1,21 @@
-import Score from "./Score"
+import Score from "./Score";
 
 const Student = (props) => {
-  console.log(props);
+  console.log(props)
   return (
     <>
-      <h2>These are the students!</h2>
-      <Score />
+      <div>
+        <h2>
+          {props.student.name}
+        </h2>
+      </div>
+      <div>
+        <h3>
+          {props.student.bio}
+        </h3>
+      </div>
     </>
   )
 }
 
-export default Student
+export default Student;

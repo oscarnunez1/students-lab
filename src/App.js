@@ -1,5 +1,5 @@
 import './App.css';
-import Student from './Student';
+import StudentList from './StudentList';
 
 function App() {
   const students = [
@@ -64,7 +64,7 @@ function App() {
   ]
   return (
     <div>
-      <Student students={students}/>
+      <StudentList students={students} />
     </div>
   )
 }
