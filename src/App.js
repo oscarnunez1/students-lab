@@ -1,5 +1,5 @@
 import './App.css';
-import StudentList from './StudentList';
+import StudentData from './StudentData';
 
 function App() {
   const students = [
@@ -64,7 +64,7 @@ function App() {
   ]
   return (
     <div>
-      <StudentList students={students} />
+      <StudentData students={students} />
     </div>
   )
 }
