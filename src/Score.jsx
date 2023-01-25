@@ -2,9 +2,8 @@ const Score = (props) => {
   console.log(props);
   return (
     <>
-      <h2>This is a score component!</h2>
-      {props.scores.score}
-      {props.scores.date}
+      <h2>Test Date: {props.score.date}</h2>
+      <h3>Score: {props.score.score}</h3>
     </>
   )
 }

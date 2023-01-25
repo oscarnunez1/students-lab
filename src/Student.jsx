@@ -1,13 +1,14 @@
 import Score from "./Score";
 
 const Student = (props) => {
-  console.log(props)
   return (
     <>
-      <h2>This is a Student component!</h2>   
-      <h2>{props.students.name}</h2>
-      <h3>{props.students.bio}</h3>
-      <Score />
+      <div className="card">
+        <h2>{props.student.name}</h2>
+        <h3>{props.student.bio}</h3>
+        { props.student.scores.map(score => 
+          <Score score={score} />)}
+      </div>
     </>
   )
 }
