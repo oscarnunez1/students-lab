@@ -1,4 +1,5 @@
-import {useState } from 'react'
+// import {useState } from 'react'
+import { useState } from 'react';
 import './App.css';
 import StudentData from './StudentData';
 
@@ -63,9 +64,10 @@ function App() {
       ]
     }
   ]
+  const [studentsData, setStudentsData] = useState(students)
   return (
     <div>
-      <StudentData students={students} />
+      <StudentData students={studentsData} />
     </div>
   )
 }

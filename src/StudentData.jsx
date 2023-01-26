@@ -6,8 +6,8 @@ const StudentData = (props) => {
   return (
     <>
       <h2>Student List</h2>
-      {props.students.map(student =>
-        <Student key={student.name} student={student} />
+      {props.students.map((student, idx) =>
+        <Student key={idx} student={student} />
       )}
     </>
   );

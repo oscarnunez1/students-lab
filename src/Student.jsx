@@ -6,8 +6,8 @@ const Student = (props) => {
       <div className="card">
         <h2>{props.student.name}</h2>
         <h3>{props.student.bio}</h3>
-        { props.student.scores.map(score => 
-          <Score score={score} />)}
+        { props.student.scores.map((score, idx) => 
+          <Score key={idx} score={score} />)}
       </div>
     </>
   )
